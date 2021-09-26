@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(192, 205, 229);
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.homeContainer{
+    max-width: 850px;
+}
+
+.bigCard{
+    height: 60vh;
+}
+
+.bgCard{
+    background-color: rgb(53, 81, 134);
+}
+.bgNav{
+    background-color: rgb(41, 41, 13);
+}
+
+.navItemBg{
+ max-width: 600px;
+ 
+}
+
+.listBody{
+    max-height: 45vh;
+}
+
+.emptyText{
+    height: 45vh;
+}
+
+.itemNav{
+    text-decoration: none;
+    color :rgb(154, 158, 158);
+    font-size: 20px;
+}
+
+.exceptFooter{
+    min-height: 96vh;
+}
+footer{
+    background-color: rgb(137, 143, 118);
+    height: 4vh;
+}

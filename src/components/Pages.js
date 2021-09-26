@@ -16,7 +16,6 @@ const Pages = () => {
           include: ["authors", "tags"],
         },
       });
-      console.log("all pages pages", response.data.posts);
       setAvailablePosts(response.data.posts);
     };
     allPages();
@@ -73,7 +72,6 @@ const Pages = () => {
     }
   });
 
-  console.log(allLinks);
 
   // Links Starting String
   const startUrl = "https://ghost-blog.ipxp.in/";

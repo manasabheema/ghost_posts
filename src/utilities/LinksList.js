@@ -12,7 +12,7 @@ const LinksList = ({ listTitle, listValue }) => {
             <div className="col-2">
               <Router>
                 <Link target={"_blank"} to={{ pathname: link }}>
-                  <i class="fal fa-unlink"></i>
+                  <i className="fal fa-unlink"></i>
                 </Link>
               </Router>
             </div>
@@ -33,7 +33,7 @@ const LinksList = ({ listTitle, listValue }) => {
     >
       <div className="card-body">
         <h5 className="card-title text-warning  text-center">
-          <i class="fal fa-link"></i>&nbsp;&nbsp;
+          <i className="fal fa-link"></i>&nbsp;&nbsp;
           {listTitle}
         </h5>
         <div className="card-text overflow-auto listBody">

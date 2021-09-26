@@ -12,7 +12,7 @@ const List = ({ listTitle, listValue }) => {
             <div className="col-2">
               <Router>
                 <Link target={"_blank"} to={{ pathname: post.url }}>
-                  <i class="fad fa-external-link"></i>
+                  <i className="fad fa-external-link"></i>
                 </Link>
               </Router>
             </div>

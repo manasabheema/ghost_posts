@@ -64,7 +64,10 @@ const Posts = () => {
       </div>
       <div className="row">
         <div className="col-xs-12 col-sm-6">
-          <List listTitle={"Posts with too long URL"} listValue={longURL} />
+          <List
+            listTitle={"Posts with URL more than 100-chars"}
+            listValue={longURL}
+          />
         </div>
         <div className="col-xs-12 col-sm-6">
           <List

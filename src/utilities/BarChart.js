@@ -5,14 +5,10 @@ import "../styles/App.css";
 const BarChart = ({ barTitle, barValue }) => {
   const array = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   const dateArray = barValue.map((e) => new Date(e.published_at).getMonth());
-  console.log(dateArray, array);
 
   dateArray.forEach((e) => {
-    console.log(e, array[e]);
     array[e] = array[e] + 1;
-    console.log(e, array[e]);
   });
-  console.log("newArray", array);
   const state = {
     labels: [
       "Jan",

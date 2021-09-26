@@ -18,28 +18,24 @@ const Home = () => {
     //Number of posts
     const pages = async () => {
       const response = await ghostApi.get("posts/");
-      console.log("pages", response.data);
       setPostCount(response.data.posts.length);
     };
 
     //Number of posts
     const posts = async () => {
       const response = await ghostApi.get("pages/");
-      console.log("posts", response.data);
       setPageCount(response.data.pages.length);
     };
 
     //Number of Authors
     const authors = async () => {
       const response = await ghostApi.get("authors/");
-      console.log("authors", response.data);
       setAuthorCount(response.data.authors.length);
     };
 
     //Number of Tags
     const tags = async () => {
       const response = await ghostApi.get("tags/");
-      console.log("tags", response.data);
       setTagCount(response.data.tags.length);
     };
 
@@ -52,14 +48,12 @@ const Home = () => {
           include: "authors",
         },
       });
-      console.log("posts list", response.data.posts);
       setNewPosts(response.data.posts);
     };
 
     //All Posts
     const allPages = async () => {
       const response = await ghostApi.get("posts/");
-      console.log("all posts", response.data.posts);
       setAvailablePosts(response.data.posts);
     };
     pages();

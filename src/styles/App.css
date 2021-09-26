@@ -36,6 +36,13 @@ body{
     color :rgb(154, 158, 158);
     font-size: 20px;
 }
+@media screen and (min-width:768px) {
+    .pagesDis{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 
 .exceptFooter{
     min-height: 96vh;

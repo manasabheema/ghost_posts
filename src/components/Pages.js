@@ -87,19 +87,23 @@ const Pages = () => {
   return (
     <div className="container my-5 homeContainer">
       <div className="row">
-        <div className="col-12">
-          <Count cardTitle={"Total Links"} cardValue={allLinks.length} />
+        <div className="col-md-4">
+          <Count cardTitle={"Available Links"} cardValue={allLinks.length} />
+        </div>
+        <div className="col-md-4">
           <Count
-            cardTitle={"Total External Links"}
+            cardTitle={"External Links"}
             cardValue={externalLinks.length}
           />
+        </div>
+        <div className="col-md-4">
           <Count
-            cardTitle={"Total Internal Links"}
+            cardTitle={"Internal Links"}
             cardValue={internalLinks.length}
           />
         </div>
       </div>
-      <div className="row">
+      <div className="row pagesDis">
         <div className="col-xs-12 col-sm-6">
           <LinksList
             listTitle={"External Broken Links"}

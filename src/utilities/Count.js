@@ -4,7 +4,7 @@ const Count = ({ cardTitle, cardValue }) => {
   return (
     <div
       className="card h-250 bgCard m-2"
-      style={{ width: "auto", minWidth: "250px" }}
+      style={{ width: "auto", minWidth: "200px" }}
     >
       <div className="card-body">
         <h5 className="card-title text-center text-warning ">
